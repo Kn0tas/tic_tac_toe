@@ -14,3 +14,8 @@ xhost +
 docker run -it --rm --name pygame-container -e DISPLAY=$DISPLAY -v /tmp/.X11-unix:/tmp/.X11-unix pygame-image
 ```
 
+Run tests
+
+```sh
+python3 -m unittest tests/test_TicTacToe.py
+```
